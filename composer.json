@@ -1,0 +1,15 @@
+{
+    "name": "socrates/php-poker",
+    "description": "Poker Boilerplate",
+    "type": "application",
+    "license": "GPL-3.0",
+    "require": {
+        "silex/silex": "1.3.4"
+    },
+    "autoload": {
+        "psr-4": {
+             "Poker\\": "src/"
+         }
+    }
+}
+
