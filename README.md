@@ -18,7 +18,9 @@ How to go live as fast as possible?
 1. Clone this repo
 2. Create an account on [Fortrabbit](http://www.fortrabbit.com/)
 3. Create [a new application](https://dashboard.fortrabbit.com/apps/new/) inside your fortrabbit account.
-4. Copy the git url that Fortrabbit gives you
-5. Add that url as a remote to your local repository `git remote add fortrabbit <url>`. Don't forget to replace `<url>` with the real url you copied in step 4.
-6. Deploying is as easy as pushing to that remote: `git push fortrabbit master`
-7. Visit your fortrabbit app's URL to see your microservice working!
+4. Copy your public key `cat ~/.ssh/id_rsa.pub | pbcopy`
+5. Add it to your Fortrabbit application under "ssh access"
+6. Copy the git url that Fortrabbit gives you
+7. Add that url as a remote to your local repository `git remote add fortrabbit <url>`. Don't forget to replace `<url>` with the real url you copied in step 4.
+8. Deploying is as easy as pushing to that remote: `git push fortrabbit master`
+9. Visit your fortrabbit app's URL to see your microservice working!
